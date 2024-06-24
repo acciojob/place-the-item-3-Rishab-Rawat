@@ -1,14 +1,11 @@
-
-/* Your CSS Code here. */
 .holder {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px; /* Adjust the gap between items if needed */
 }
 
-/* Optional: if you want to style the items inside the holder */
-.holder .item {
-    flex: 1 1 30%; /* Adjust the basis percentage as needed */
-    margin: 10px; /* Optional: for spacing around items */
-    box-sizing: border-box; /* To include padding and border in the element's total width and height */
+.holder > * {
+  flex: 1 1 auto;
+  min-width: 0;
 }
